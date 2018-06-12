@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="form">
+        <h3>Thanks for submitting this form!</h3>
+        <h4>You have submitted this form {{ attempt }} times now.</h4>
+        <ul>
+            <li>Name:<span class='tab1'></span>{{ name }}</span></li>
+            <li>Dojo Location:<span class='tab2'>{{ location }}</span></li>
+            <li>Favorite Language:<span class='tab3'>{{ language }}</span></li>
+            <li>Comment:<span class='tab4'>{{ comment }}</span></li>
+        </ul>
+        <form action='/' method='GET'>
+            <input type='submit' value='Go Back'> 
+        </form>
+    </div>
+{% endblock content %}
